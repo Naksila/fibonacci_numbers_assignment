@@ -1,5 +1,5 @@
 import 'package:fibonacci_numbers_assignment/model/model.dart';
-import 'package:fibonacci_numbers_assignment/utils/contant.dart';
+import 'package:fibonacci_numbers_assignment/utils/constant.dart';
 import 'package:fibonacci_numbers_assignment/widget/crad_item.dart';
 import 'package:flutter/material.dart';
 
@@ -80,7 +80,7 @@ class _FibonacciPageState extends State<FibonacciPage> {
     }
   }
 
-  void removeItem(int index, int key, Map<String, dynamic> delectedItem) {
+  void removeItem(int key, Map<String, dynamic> delectedItem) {
     setState(() {
       if (delectedItem.isNotEmpty) {
         deletedItems.add(MapEntry(key.toString(), delectedItem));
@@ -137,7 +137,6 @@ class _FibonacciPageState extends State<FibonacciPage> {
 
               highlightItem(fibonacci[index]['originalIndex']);
               removeItem(
-                index,
                 fibonacci[index]['originalIndex'],
                 fibonacci[index],
               );

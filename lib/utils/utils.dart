@@ -1,1 +1,1 @@
-export 'contant.dart';
+export 'constant.dart';
