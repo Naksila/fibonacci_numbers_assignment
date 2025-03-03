@@ -169,19 +169,19 @@ class _FibonacciPageState extends State<FibonacciPage> {
       isScrollControlled: true,
       builder: (BuildContext context) {
         return Container(
-          padding: const EdgeInsets.only(top: 16.0),
+          padding: const EdgeInsets.only(top: 24.0),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height * 0.50,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                alignment: Alignment.topRight,
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  '${groupData.length}/${icon == Icons.circle ? fibonacciCircle : icon == Icons.close ? fibonacciClose : fibonacciSquareOutlined}',
-                ),
-              ),
+              // Container(
+              //   alignment: Alignment.topRight,
+              //   padding: const EdgeInsets.all(16.0),
+              //   child: Text(
+              //     '${groupData.length}/${icon == Icons.circle ? fibonacciCircle : icon == Icons.close ? fibonacciClose : fibonacciSquareOutlined}',
+              //   ),
+              // ),
               Expanded(
                 child: ListView.builder(
                   itemCount: groupData.length,
